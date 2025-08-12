@@ -1,4 +1,3 @@
-## ✅ **4-Week Learning + Practice Roadmap for Your Internship**
 
 ### 🔹 **Goal:** Build features and workflows commonly found in chit fund apps, like user authentication, plan listing, payment flow, etc., while mastering BLoC and backend integration.
 

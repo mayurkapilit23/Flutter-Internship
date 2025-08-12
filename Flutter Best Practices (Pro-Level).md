@@ -1,5 +1,3 @@
-## ✅ **Flutter Best Practices (Pro-Level)**
-
 ### 🔹 1. **Project Structure & Folder Organization**
 
 Use a **clear folder structure**, like: 
