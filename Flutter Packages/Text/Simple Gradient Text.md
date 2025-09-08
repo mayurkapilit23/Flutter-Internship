@@ -1,5 +1,3 @@
-**Simple Gradient Text**
-
 **simple_gradient_text** is a Flutter package to easily create gradient-colored text (like rainbow or multi-color effects).
 
 ```yaml

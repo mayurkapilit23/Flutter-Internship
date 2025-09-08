@@ -6,10 +6,10 @@ The `animations` package in Flutter provides **pre-built, beautiful animations**
 
 ## Common Animations Provided
 
-| Animation Type            | Description                                                  |
-| ------------------------- | ------------------------------------------------------------ |
-| **FadeThroughTransition** | Fade between UI elements (e.g., list to detail view).        |
-| **SharedAxisTransition**  | Transition where elements move together along a shared axis (X, Y, or Z). |
+| Animation Type            | Description                                                                 |
+| ------------------------- | --------------------------------------------------------------------------- |
+| **FadeThroughTransition** | Fade between UI elements (e.g., list to detail view).                       |
+| **SharedAxisTransition**  | Transition where elements move together along a shared axis (X, Y, or Z).   |
 | **ContainerTransform**    | Smoothly animates between two UI elements (like cards expanding to detail). |
 
 ```yaml
@@ -24,9 +24,6 @@ dependencies:
 - Card to detail page animations
 - Tab switching with smooth fade or shared axis
 - Mimicking Material motion design easily
-
-
-
 ## Available Widgets
 
 - `OpenContainer`
@@ -34,9 +31,6 @@ dependencies:
 - `FadeThroughTransition`
 - `SharedAxisTransition`
 - `FadeScaleTransition`
-
-
-
 ##  Pro Tips
 
 - Works well with `PageTransitionsTheme` for global routing animations.
