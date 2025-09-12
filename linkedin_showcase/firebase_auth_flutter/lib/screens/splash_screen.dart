@@ -14,7 +14,6 @@ class SplashScreen extends StatefulWidget {
 class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     Future.delayed(Duration(milliseconds: 1000), () {
       Navigator.pushReplacement(
@@ -31,11 +30,7 @@ class _SplashScreenState extends State<SplashScreen> {
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            SvgPicture.asset('assets/plant_logo.svg', width: 100),
-
-            Text('PlantCare', style: TextStyle(fontWeight: FontWeight.bold)),
-          ],
+          children: [SvgPicture.asset('assets/shn_logo.svg', width: 100)],
         ),
       ),
     );

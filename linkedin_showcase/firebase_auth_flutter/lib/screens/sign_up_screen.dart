@@ -22,23 +22,38 @@ class SignUpScreen extends StatelessWidget {
               children: [
                 Center(
                   child: Column(
+
                     children: [
-                      SvgPicture.asset('assets/plant_logo.svg', width: 100),
-                      Text(
-                        'PlantCare',
-                        style: TextStyle(fontWeight: FontWeight.bold),
+                      SvgPicture.asset('assets/shn_logo.svg', width: 100),
+                      const SizedBox(height: 30),
+                      const Text(
+                        'Create your Account',
+                        style: TextStyle(
+                          fontSize: 20.0,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: 'Poppins',
+                        ),
                       ),
                     ],
                   ),
                 ),
                 SizedBox(height: 20),
-                Text('Name', style: TextStyle(fontWeight: FontWeight.w700)),
+                Text(
+                  'Name',
+                  style: TextStyle(
+                    fontWeight: FontWeight.w700,
+                    fontFamily: 'Poppins',
+                  ),
+                ),
                 SizedBox(height: 10),
                 TextField(
                   maxLines: 1,
                   decoration: InputDecoration(
                     hintText: 'John Deo',
-                    hintStyle: TextStyle(color: Colors.grey),
+                    hintStyle: TextStyle(
+                      color: Colors.grey,
+                      fontFamily: 'Poppins',
+                    ),
                     border: OutlineInputBorder(
                       borderSide: BorderSide(color: AppColors.lightGreyColor),
                       borderRadius: BorderRadius.circular(12),
@@ -61,17 +76,23 @@ class SignUpScreen extends StatelessWidget {
                     ),
                   ),
                 ),
-                SizedBox(height: 30),
-                Text(
+                const SizedBox(height: 30),
+                const Text(
                   'Email Address',
-                  style: TextStyle(fontWeight: FontWeight.w700),
+                  style: TextStyle(
+                    fontWeight: FontWeight.w700,
+                    fontFamily: 'Poppins',
+                  ),
                 ),
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 TextField(
                   maxLines: 1,
                   decoration: InputDecoration(
                     hintText: 'example@gmail.com',
-                    hintStyle: TextStyle(color: Colors.grey),
+                    hintStyle: const TextStyle(
+                      color: Colors.grey,
+                      fontFamily: 'Poppins',
+                    ),
                     border: OutlineInputBorder(
                       borderSide: BorderSide(color: AppColors.lightGreyColor),
                       borderRadius: BorderRadius.circular(12),
@@ -94,18 +115,30 @@ class SignUpScreen extends StatelessWidget {
                     ),
                   ),
                 ),
-                SizedBox(height: 30),
+                const SizedBox(height: 30),
 
-                Text('Password', style: TextStyle(fontWeight: FontWeight.w700)),
+                const Text(
+                  'Password',
+                  style: TextStyle(
+                    fontWeight: FontWeight.w700,
+                    fontFamily: 'Poppins',
+                  ),
+                ),
                 SizedBox(height: 10),
                 TextField(
                   obscureText: true,
                   maxLines: 1,
                   decoration: InputDecoration(
                     hintText: '********',
-                    hintStyle: TextStyle(letterSpacing: 5, color: Colors.grey),
+                    hintStyle: const TextStyle(
+                      letterSpacing: 5,
+                      color: Colors.grey,
+                      fontFamily: 'Poppins',
+                    ),
                     border: OutlineInputBorder(
-                      borderSide: BorderSide(color: AppColors.lightGreyColor),
+                      borderSide: const BorderSide(
+                        color: AppColors.lightGreyColor,
+                      ),
                       borderRadius: BorderRadius.circular(12),
                     ),
                     focusedBorder: OutlineInputBorder(
@@ -126,7 +159,7 @@ class SignUpScreen extends StatelessWidget {
                     ),
                   ),
                 ),
-                SizedBox(height: 20),
+                const SizedBox(height: 20),
                 Material(
                   color: Colors.black, // Button background
                   borderRadius: BorderRadius.circular(12),
@@ -136,16 +169,17 @@ class SignUpScreen extends StatelessWidget {
                     onTap: () {},
                     child: Container(
                       width: double.infinity,
-                      padding: EdgeInsets.symmetric(vertical: 17),
+                      padding: const EdgeInsets.symmetric(vertical: 17),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(12),
                       ),
-                      child: Center(
+                      child: const Center(
                         child: Text(
                           'Sign up',
                           style: TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.w700,
+                            fontFamily: 'Poppins',
                           ),
                         ),
                       ),
@@ -153,12 +187,15 @@ class SignUpScreen extends StatelessWidget {
                   ),
                 ),
 
-                SizedBox(height: 20),
+                const SizedBox(height: 20),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text("Already have an account?"),
-                    SizedBox(width: 5),
+                    const Text(
+                      "Already have an account?",
+                      style: TextStyle(fontFamily: 'Poppins'),
+                    ),
+                    const SizedBox(width: 5),
                     GestureDetector(
                       onTap: () {
                         Navigator.push(
@@ -168,11 +205,12 @@ class SignUpScreen extends StatelessWidget {
                           ),
                         );
                       },
-                      child: Text(
+                      child: const Text(
                         'Log in',
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
                           decoration: TextDecoration.underline,
+                          fontFamily: 'Poppins',
                         ),
                       ),
                     ),
